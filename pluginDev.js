@@ -1,7 +1,6 @@
 videojs.registerPlugin('pluginDev', function() {
   var myPlayer = this;
 
-
 	myPlayer.one('loadedmetadata', function() {
 	  var playlistItems = document.getElementsByClassName('vjs-playlist-item');
 	  // overlay = document.createElement('div');
@@ -10,11 +9,15 @@ videojs.registerPlugin('pluginDev', function() {
 	  // player.el().appendChild(overlay);
 	  playlistData = myPlayer.playlist();
 
-		var i,
-		iMax = playlistItems.length;
-		for (i = 0; i < iMax; i++) {
-			playlistItems[i].setAttribute('alt', videoItem.name);
+		function setAttr() {
+			var i,
+				iMax = playlistItems.length;
+			for (i = 0; i < iMax; i++) {
+				playlistItems[i].setAttribute('alt', videoItem.name);
+			}
+		  console.log(iMax);
 		}
-	  console.log(iMax);
-	}
+		setAttr()
+	});
+
 });
