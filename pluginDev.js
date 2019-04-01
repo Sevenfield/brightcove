@@ -1,4 +1,4 @@
-videojs.registerPlugin('pluginDev', function() {
+videojs.registerPlugin('setThumbnailAltAttr', function() {
   var myPlayer = this;
 
 	myPlayer.one('loadedmetadata', function() {
