@@ -11,9 +11,9 @@ videojs.registerPlugin('pluginDev', function() {
 				items = playlistItems.length,
 				titles = vidTitles.length;
 			for (i = 0; i < items && titles; i++) {
-				playlistItems[i].setAttribute('alt', vidTitle[i]);
+				playlistItems[i].setAttribute('alt', vidTitles[i]);
 			}
-		  console.log(vidTitle);
+		  console.log(vidTitles);
 		}
 		setThumbnailAltAttr();
 	});
