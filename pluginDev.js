@@ -13,5 +13,5 @@ videojs.registerPlugin('pluginDev', function() {
 		playlistItems[i].setAttribute('alt', videoItem.name);
 	}
 
-  console.log(playlistItems.length);
+  console.log(iMax);
 });
