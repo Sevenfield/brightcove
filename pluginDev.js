@@ -6,7 +6,7 @@ videojs.registerPlugin('pluginDev', function() {
 	  	vidTitle = document.querySelectorAll('.vjs-playlist-name').textContent,
 	  	playlistData = myPlayer.playlist();
 
-		function setAttr() {
+		function setThumbnailAltAttr() {
 			var i,
 				iMax = playlistItems.length;
 			for (i = 0; i < iMax; i++) {
@@ -14,7 +14,7 @@ videojs.registerPlugin('pluginDev', function() {
 			}
 		  console.log(vidTitle);
 		}
-		setAttr();
+		setThumbnailAltAttr();
 	});
 
 });
