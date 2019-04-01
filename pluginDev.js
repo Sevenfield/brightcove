@@ -12,7 +12,7 @@ videojs.registerPlugin('pluginDev', function() {
 			for (i = 0; i < iMax; i++) {
 				playlistItems[i].setAttribute('alt', vidTitle);
 			}
-		  console.log(playlistItems);
+		  console.log(vidTitle);
 		}
 		setAttr();
 	});
