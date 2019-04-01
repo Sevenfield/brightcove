@@ -10,7 +10,7 @@ videojs.registerPlugin('pluginDev', function() {
 				items = playlistItems.length;
 
 			for (i = 0; i < items; i++) {
-				playlistItems[i].setAttribute('alt', vidTitles[i].textContent);
+				playlistItems[i].setAttribute('alt', 'fdgfd');
 			}
 		  console.log(vidTitles);
 		}
