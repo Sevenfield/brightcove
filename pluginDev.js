@@ -3,14 +3,14 @@ videojs.registerPlugin('pluginDev', function() {
 
 	myPlayer.one('loadedmetadata', function() {
 	  var playlistItems = document.querySelectorAll('.vjs-playlist-thumbnail img'),
-	  	vidTitles = document.getElementsByClassName('.vjs-playlist-name').getAttribute('title');
+	  	vidTitles = document.querySelectorAll('.vjs-playlist-name');
 
 		function setThumbnailAltAttr() {
 			var i,
 				items = playlistItems.length;
 
 			for (i = 0; i < items; i++) {
-				playlistItems[i].setAttribute('alt', vidTitles[i]);
+				playlistItems[i].setAttribute('alt', vidTitles[i].textContent);
 			}
 		  //console.log(vidTitles);
 		}
