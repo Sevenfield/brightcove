@@ -10,8 +10,8 @@ videojs.registerPlugin('pluginDev', function() {
 	var i,
 	iMax = playlistItems.length;
 	for (i = 0; i < iMax; i++) {
-	playlistItems[i].setAttribute('alt', videoItem.name);
+		playlistItems[i].setAttribute('alt', videoItem.name);
 	}
 
-  console.log(playlistData);
+  console.log(playlistItems.length);
 });
