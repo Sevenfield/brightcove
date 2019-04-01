@@ -3,7 +3,7 @@ videojs.registerPlugin('pluginDev', function() {
 
 	myPlayer.one('loadedmetadata', function() {
 	  var playlistItems = document.querySelectorAll('.vjs-playlist-thumbnail img'),
-	  	vidTitles = document.querySelectorAll('.vjs-playlist-name').textContent,
+	  	vidTitles = document.querySelectorAll('.vjs-playlist-name'),
 	  	playlistData = myPlayer.playlist();
 
 		function setThumbnailAltAttr() {
@@ -13,7 +13,7 @@ videojs.registerPlugin('pluginDev', function() {
 			for (i = 0; i < items && titles; i++) {
 				playlistItems[i].setAttribute('alt', vidTitles[i]);
 			}
-		  console.log(vidTitles);
+		  console.log(vidTitles.textContent);
 		}
 		setThumbnailAltAttr();
 	});
