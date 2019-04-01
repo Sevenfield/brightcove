@@ -15,7 +15,7 @@ videojs.registerPlugin('pluginDev', function() {
 			for (i = 0; i < iMax; i++) {
 				playlistItems[i].setAttribute('alt', 'fdhfd');
 			}
-		  console.log(iMax);
+		  console.log(playlistItems);
 		}
 		setAttr();
 	});
