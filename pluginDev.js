@@ -13,7 +13,7 @@ videojs.registerPlugin('pluginDev', function() {
 			for (i = 0; i < items; i++) {
 				playlistItems[i].setAttribute('alt', vidTitles[i]);
 			}
-		  console.log(vidTitles);
+		  console.log(playlistItems);
 		}
 		setThumbnailAltAttr();
 	});
