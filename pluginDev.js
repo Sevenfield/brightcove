@@ -3,7 +3,7 @@ videojs.registerPlugin('pluginDev', function() {
 
 	myPlayer.one('loadedmetadata', function() {
 	  var playlistItems = document.querySelectorAll('.vjs-playlist-thumbnail img'),
-	  	vidTitles = document.getElementsByClassName('.vjs-playlist-name').getAttribute('title');;
+	  	vidTitles = document.getElementsByClassName('.vjs-playlist-name').getAttribute('title');
 
 		function setThumbnailAltAttr() {
 			var i,
