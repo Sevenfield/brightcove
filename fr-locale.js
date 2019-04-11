@@ -1,5 +1,5 @@
 {
-  "Play": "Lecture",
+  "Play": "Lecture gddsgdsgdsg",
   "Pause": "Pause",
   "Current Time": "Temps actuel",
   "Duration Time": "Durée",
